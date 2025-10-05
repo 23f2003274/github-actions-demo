@@ -23,6 +23,10 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install dependencies
+        run: pip install requests
+
+
       - name: Fetch ISS location data
         run: |
           python - <<'PY'
